@@ -336,8 +336,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
 
   // Nieuwe knoppen
-  document.getElementById("addGuides").addEventListener("click", addGuides);
-  document.getElementById("clearGuides").addEventListener("click", clearGuides);
+  const addGuidesBtn = document.getElementById("addGuides");
+  if (addGuidesBtn) addGuidesBtn.addEventListener("click", addGuides);
+  const clearGuidesBtn = document.getElementById("clearGuides");
+  if (clearGuidesBtn) clearGuidesBtn.addEventListener("click", clearGuides);
 
   document.getElementById("sliceWidth").value = "1080";
   await refreshUI();

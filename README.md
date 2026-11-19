@@ -21,9 +21,11 @@ Export Every X used to be a paid plugin. It is now free and open source under th
 
 ## Install
 
+> **Not tested yet:** version 1.0.4 has not been tested in Photoshop yet. Its only change from 1.0.3, the last tested version, is a small fix for an error when the panel loads.
+
 ### Option 1: install the package (recommended)
 
-1. Download [`dist/export-every-x-1.0.3.ccx`](dist/export-every-x-1.0.3.ccx).
+1. Download [`dist/export-every-x-1.0.4.ccx`](dist/export-every-x-1.0.4.ccx).
 2. Double-click the `.ccx` file. The Creative Cloud desktop app opens and asks to install the plugin locally. Confirm.
 3. Restart Photoshop.
 4. Open the panel from the **Plugins** menu: **Plugins › Export Every X**. If it is not there, check that the Creative Cloud desktop app shows the plugin as installed.
@@ -34,7 +36,7 @@ For developers who want to run or change the code.
 
 1. Install **UXP Developer Tool** from the Creative Cloud desktop app.
 2. In Photoshop, enable Developer Mode in the Plugins preferences, so the **Plugins › Development** menu becomes available.
-3. In UXP Developer Tool, click **Add Plugin…** and select `plugin/manifest.json` from this repository (or from the unzipped `dist/export-every-x-1.0.3.zip`).
+3. In UXP Developer Tool, click **Add Plugin…** and select `plugin/manifest.json` from this repository (or from the unzipped `dist/export-every-x-1.0.4.zip`).
 4. Click **Load**, then open **Plugins › Export Every X** in Photoshop.
 
 ## How to use
@@ -97,10 +99,10 @@ The files in `dist/` were made from the `plugin/` folder:
 
 ```sh
 # .ccx: the plugin files at the root of a zip archive
-cd plugin && zip -X -D -r ../dist/export-every-x-1.0.3.ccx manifest.json index.html main.js styles.css icons && cd ..
+cd plugin && zip -X -D -r ../dist/export-every-x-1.0.4.ccx manifest.json index.html main.js styles.css icons && cd ..
 
 # .zip: the plugin folder itself, for UXP Developer Tool
-ditto -c -k --keepParent --norsrc --noextattr --noqtn --noacl plugin dist/export-every-x-1.0.3.zip
+ditto -c -k --keepParent --norsrc --noextattr --noqtn --noacl plugin dist/export-every-x-1.0.4.zip
 ```
 
 The `id` in `manifest.json` is the plugin ID that Adobe assigned to Export Every X. If you publish your own fork, request your own plugin ID from Adobe and replace it.

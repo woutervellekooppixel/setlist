@@ -2,7 +2,7 @@
   "manifestVersion": 5,
   "id": "17b43c5f",
   "name": "Export Every X",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.html",
   "host": {
     "app": "PS",

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.4
+
+- Fix: panel no longer throws on load.
+
 ## Open-source release
 
 - Export Every X is now free and open source under the MIT license.
