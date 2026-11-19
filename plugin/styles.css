@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 12px;
+  box-sizing: border-box;
+  background: var(--uxp-host-background-color, transparent);
+  color-scheme: dark;
+  color: var(--uxp-host-text-color, rgba(255, 255, 255, 0.92));
+}
+
+.wrap {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-sizing: border-box;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  padding: 18px 0 6px;
+}
+
+.heroLogo {
+  width: 110px;
+  height: 110px;
+  display: inline-flex;
+}
+
+.heroLogo img {
+  width: 110px;
+  height: 110px;
+  display: block;
+  object-fit: contain;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid var(--uxp-host-border-color, rgba(0, 0, 0, 0.45));
+  background: var(--uxp-host-widget-background-color, #333333);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+}
+
+/* Extra spacing only between the background cards */
+.card + .card {
+  margin-top: 10px;
+}
+
+/* Ensure Spectrum text renders light in UXP builds that ignore sp-theme color. */
+sp-label,
+sp-heading,
+sp-detail {
+  color: var(--uxp-host-text-color, rgba(255, 255, 255, 0.92)) !important;
+}
+
+sp-label::part(label),
+sp-heading::part(heading),
+sp-detail::part(detail) {
+  color: var(--uxp-host-text-color, rgba(255, 255, 255, 0.92)) !important;
+}
+
+sp-textfield {
+  width: 100%;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.cta {
+  margin-top: 6px;
+}
+
+/* Spectrum buttons are rounded by default; force square corners. */
+sp-button {
+  border-radius: 0px !important;
+  --spectrum-button-border-radius: 0px !important;
+  --spectrum-button-m-border-radius: 0px !important;
+  --spectrum-button-s-border-radius: 0px !important;
+  --spectrum-button-l-border-radius: 0px !important;
+}
+
+#chooseFolder,
+#run {
+  border-radius: 0px !important;
+}
+
+sp-button::part(button),
+sp-button::part(control) {
+  border-radius: 0 !important;
+}
+
+
+
+
+
+#status {
+  white-space: pre-wrap;
+  line-height: 1.35;
+  color: var(--uxp-host-text-color, rgba(255, 255, 255, 0.92));
+}
+
+.footer {
+  text-align: center;
+  opacity: 0.65;
+  margin-top: 6px;
+}
