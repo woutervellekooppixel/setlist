@@ -117,6 +117,17 @@ ditto -c -k --keepParent --norsrc --noextattr --noqtn --noacl plugin dist/setlis
 
 The `id` in `manifest.json` is the plugin ID that Adobe assigned to Setlist. If you publish your own fork, request your own plugin ID from Adobe and replace it.
 
+## All Access
+
+Part of [All Access](https://www.wouter.photo/tools), free tools for photographers by Wouter Vellekoop:
+
+- [Pitpick](https://github.com/woutervellekooppixel/pitpick): fast culling, IPTC metadata and renaming for macOS
+- [Bootleg](https://github.com/woutervellekooppixel/bootleg): finds where your photos turn up online
+- [Stage Fix](https://github.com/woutervellekooppixel/stage-fix): Lightroom presets for stage light
+- [Crop & Roll Export](https://github.com/woutervellekooppixel/lightroom-plugins): Lightroom Classic exports sorted by aspect ratio
+- [Remix](https://github.com/woutervellekooppixel/remix): every photo in every format, in Photoshop
+- [Setlist](https://github.com/woutervellekooppixel/setlist): one wide image as a series of slides, in Photoshop
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
