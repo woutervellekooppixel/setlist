@@ -23,6 +23,14 @@ Export Every X used to be a paid plugin. It is now free and open source under th
 
 > **Not tested yet:** version 1.0.4 has not been tested in Photoshop yet. Its only change from 1.0.3, the last tested version, is a small fix for an error when the panel loads.
 
+### From Terminal (Mac)
+
+One line. The Creative Cloud desktop app opens and installs the plugin in Photoshop:
+
+```sh
+curl -fsSL https://github.com/woutervellekooppixel/export-every-x/releases/latest/download/ExportEveryX.ccx -o /tmp/ExportEveryX.ccx && open /tmp/ExportEveryX.ccx
+```
+
 ### Option 1: install the package (recommended)
 
 1. Download [`dist/export-every-x-1.0.4.ccx`](dist/export-every-x-1.0.4.ccx).
