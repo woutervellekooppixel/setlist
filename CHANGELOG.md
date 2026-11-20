@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0
+
+- Renamed to Setlist (formerly Export Every X). The plugin and its panel are now called Setlist. No other changes. Not yet tested in Photoshop.
+
 ## 1.0.4
 
 - Fix: panel no longer throws on load.
